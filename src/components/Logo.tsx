@@ -33,25 +33,26 @@ const Logo: React.FC<LogoProps> = ({
     <div className={`flex items-center justify-center ${className}`}>
       <div className="flex items-center justify-center">
         <div 
-          className="relative flex-shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg"
+          className="relative flex-shrink-0 flex items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           style={{ width: `${actualSize}px`, height: `${actualSize}px` }}
         >
           {/* The A letter for AppSpark */}
           <div 
-            className="relative z-10 font-bold text-white text-center"
-            style={{ fontSize: `${actualSize * 0.6}px` }}
+            className="relative z-10 font-black text-white text-center"
+            style={{ fontSize: `${actualSize * 0.6}px`, textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
           >
             A
           </div>
           
-          {/* Subtle glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-indigo-500 opacity-70 rounded-xl"></div>
-          <div className="absolute -inset-1 bg-blue-500 rounded-xl blur-sm opacity-30 animate-pulse"></div>
+          {/* Enhanced glow effects */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600 to-purple-500 opacity-80 rounded-2xl"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur-md opacity-40 animate-pulse-slow"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/20 rounded-2xl"></div>
         </div>
         
         {showText && (
-          <div className="ml-3 font-bold text-xl tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-300">
+          <div className="ml-4 font-black text-2xl tracking-tight">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">
               AppSpark
             </span>
           </div>

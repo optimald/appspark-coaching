@@ -23,95 +23,104 @@ export default function HomePage() {
 
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-16 md:py-24">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
-              Make Cursor work for you in{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-                60 minutes
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-              One focused session. Practical shortcuts. A clear next step.
-            </p>
+        <section className="section-spacing">
+          <div className="container mx-auto container-padding">
+            <div className="text-center max-w-6xl mx-auto">
+              <div className="animate-fade-in">
+                <h1 className="display-text mb-8">
+                  Make Cursor work for you in{' '}
+                  <span className="gradient-text">
+                    60 minutes
+                  </span>
+                </h1>
+                <p className="text-2xl md:text-3xl mb-12 text-gray-600 dark:text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
+                  One focused session. Practical shortcuts. A clear next step.
+                </p>
+              </div>
             
-            {/* Micro-proof */}
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-12 text-sm text-gray-600 dark:text-gray-400">
-              <div className="flex items-center">
-                <FiCheck className="h-4 w-4 text-green-500 mr-2" />
-                Hands-on guidance via screenshare
+              {/* Micro-proof */}
+              <div className="animate-slide-up">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
+                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/20">
+                    <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Hands-on guidance via screenshare</span>
+                  </div>
+                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/20">
+                    <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Proven shortcuts & workflows</span>
+                  </div>
+                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/20">
+                    <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">Immediate practical results</span>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center">
-                <FiCheck className="h-4 w-4 text-green-500 mr-2" />
-                Proven shortcuts & workflows
-              </div>
-              <div className="flex items-center">
-                <FiCheck className="h-4 w-4 text-green-500 mr-2" />
-                Immediate practical results
-              </div>
-            </div>
 
-            {/* CTA Button */}
-            <div className="mb-16">
-              <a
-                href="https://calendly.com/optimaldev/appspark-coaching-session"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-lg px-8 py-4 inline-flex items-center"
-                onClick={() => trackCalendlyClicked('hero')}
-              >
-                Book your session
-                <FiArrowRight className="ml-2 h-5 w-5" />
-              </a>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
-                $150 • 60 minutes • No refunds
-              </p>
+              {/* CTA Button */}
+              <div className="animate-fade-in">
+                <a
+                  href="https://calendly.com/optimaldev/appspark-coaching-session"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-xl px-12 py-6 inline-flex items-center mb-6"
+                  onClick={() => trackCalendlyClicked('hero')}
+                >
+                  Book your session
+                  <FiArrowRight className="ml-3 h-6 w-6" />
+                </a>
+                <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">
+                  $150 • 60 minutes • No refunds
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* What You Get Section */}
-        <section className="bg-gray-50 dark:bg-gray-800/50 py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                What you get
+        <section className="section-spacing bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-900/20">
+          <div className="container mx-auto container-padding">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="gradient-text-blue">What you get</span>
               </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Three concrete deliverables in every 60-minute session
+              </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="modern-card text-center">
-                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FiClock className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+            <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+              <div className="modern-card text-center feature-card group">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <FiClock className="h-10 w-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                   Immediate clarity on your setup and stuck points
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                   We'll quickly diagnose what's blocking you and get straight to solutions.
                 </p>
               </div>
               
-              <div className="modern-card text-center">
-                <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FiVideo className="h-8 w-8 text-green-600 dark:text-green-400" />
+              <div className="modern-card text-center feature-card group">
+                <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <FiVideo className="h-10 w-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                   Code-along to a concrete improvement
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                   Scaffold creation, blocker removal, deploy fixes, or workflow optimization.
                 </p>
               </div>
               
-              <div className="modern-card text-center">
-                <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FiFileText className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+              <div className="modern-card text-center feature-card group">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <FiFileText className="h-10 w-10 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                   After-Action Notes with next steps
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                   A short doc with what we changed, code snippets, and your next 3 steps.
                 </p>
               </div>
@@ -120,9 +129,14 @@ export default function HomePage() {
         </section>
 
         {/* Who it's for / Not for Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <section className="section-spacing">
+          <div className="container mx-auto container-padding">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="gradient-text">Is this right for you?</span>
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               <div className="modern-card">
                 <h3 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-6 flex items-center">
                   <FiCheck className="mr-3 h-6 w-6" />
@@ -232,13 +246,13 @@ export default function HomePage() {
         </section>
 
         {/* Calendly Embed Section */}
-        <section id="calendly" className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Book your session
+        <section id="calendly" className="section-spacing bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20">
+          <div className="container mx-auto container-padding">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="gradient-text">Book your session</span>
               </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300">
+              <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Choose a time that works for you
               </p>
             </div>
