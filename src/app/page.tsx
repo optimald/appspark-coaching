@@ -14,7 +14,7 @@ export default function HomePage() {
       <header className="sticky top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <Logo size="md" />
+            <Logo size="lg" />
           </div>
         </div>
       </header>
