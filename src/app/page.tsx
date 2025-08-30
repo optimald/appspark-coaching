@@ -15,6 +15,29 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Logo size="lg" />
+            <nav className="hidden lg:flex space-x-6">
+              <div className="relative group">
+                <button className="text-gray-300 hover:text-white transition-colors flex items-center">
+                  Common Issues
+                  <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-md border border-white/10 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="p-2">
+                    <a href="/cursor-ai-suggestions-not-working" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">AI Suggestions Not Working</a>
+                    <a href="/cursor-slow-development-workflow" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">Slow Development Workflow</a>
+                    <a href="/cursor-debugging-problems" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">Debugging Problems</a>
+                    <a href="/cursor-ai-context-problems" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">AI Context Issues</a>
+                    <a href="/cursor-integration-setup" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">Integration Setup</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#booking" className="btn-primary px-4 py-2 text-sm">Book Session</a>
+            </nav>
+            <div className="lg:hidden">
+              <a href="#booking" className="btn-primary px-4 py-2 text-sm">Book Session</a>
+            </div>
           </div>
         </div>
       </header>
@@ -97,13 +120,13 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 via-cyan-500/20 via-emerald-500/20 to-amber-500/20 rounded-3xl blur-xl"></div>
 
                 <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 p-8 md:p-12 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/10">
-                  {/* Cursor Logo */}
-                  <div className="flex-shrink-0">
-                    <img
-                      src="/assets/images/cursor-logo-official.svg"
-                      alt="Cursor Logo"
-                      className="w-20 h-20 md:w-24 md:h-24"
-                    />
+                                                {/* Cursor Logo */}
+                              <div className="flex-shrink-0">
+                                <img
+                                  src="/assets/images/cursor-logo-official.webp"
+                                  alt="Cursor Logo"
+                                  className="w-20 h-20 md:w-24 md:h-24"
+                                />
                   </div>
 
                   {/* Content */}
@@ -114,30 +137,30 @@ export default function HomePage() {
                       </span>
                     </h2>
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-                      The <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">AI-first code editor</span> that transforms how you build.
-                      <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-semibold"> Cursor</span> combines the power of VS Code with
-                      intelligent AI assistance, making coding faster, smarter, and more intuitive than ever before.
+                      The <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">revolutionary AI-powered editor</span> that's changing how developers work.
+                      <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-semibold"> Cursor</span> isn't just another editor—it's your 
+                      intelligent coding partner that understands your project, anticipates your needs, and writes code alongside you.
                     </p>
 
                     {/* Feature highlights */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                          AI Pair Programming
+                          🤝 AI Pair Programming
                         </div>
-                        <div className="text-sm text-gray-400">Code with AI assistance that understands your context</div>
+                        <div className="text-sm text-gray-400">Like having a senior developer beside you—AI that reads your entire codebase and suggests solutions that actually fit</div>
                       </div>
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-                          Smart Completions
+                          ⚡ Predictive Completions
                         </div>
-                        <div className="text-sm text-gray-400">Context-aware suggestions that predict your intent</div>
+                        <div className="text-sm text-gray-400">AI that finishes your thoughts—completions so accurate they feel like mind-reading, not guesswork</div>
                       </div>
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-emerald-400 to-amber-400 bg-clip-text text-transparent mb-2">
-                          Natural Language
+                          💬 Code with Words
                         </div>
-                        <div className="text-sm text-gray-400">Edit code by describing what you want to build</div>
+                        <div className="text-sm text-gray-400">Describe what you want in plain English and watch AI write the exact code you need—no more syntax hunting</div>
                       </div>
                     </div>
                   </div>
@@ -165,10 +188,10 @@ export default function HomePage() {
                   <FiClock className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Immediate clarity on your setup and stuck points
+                  Fast clarity on your blockers
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  We'll quickly diagnose what's blocking you and get straight to solutions.
+                  We'll zero in on what's really holding you back and align on a clear outcome for the hour.
                 </p>
               </div>
               
@@ -177,10 +200,10 @@ export default function HomePage() {
                   <FiVideo className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Code-along to a concrete improvement
+                  Hands-on progress in real time
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Scaffold creation, blocker removal, deploy fixes, or workflow optimization.
+                  Code together toward a concrete win — scaffolds, fixes, deploys, or optimized loops.
                 </p>
               </div>
               
@@ -189,10 +212,10 @@ export default function HomePage() {
                   <FiFileText className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  After-Action Notes with next steps
+                  Action notes you can run with
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  A short doc with what we changed, code snippets, and your next 3 steps.
+                  A short recap doc with changes made, key snippets, and your next 3 steps.
                 </p>
               </div>
             </div>
@@ -211,12 +234,12 @@ export default function HomePage() {
               <div className="modern-card">
                 <h3 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-6 flex items-center">
                   <FiCheck className="mr-3 h-6 w-6" />
-                  Perfect if you...
+                  ✅ Perfect if you…
                 </h3>
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Have a specific Cursor blocker or workflow question
+                    Have a Cursor blocker or workflow question you need solved fast
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -224,7 +247,11 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Need help with project scaffolding or deployment issues
+                    Need guidance on project scaffolding or deployment issues
+                  </li>
+                  <li className="flex items-start">
+                    <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    Are looking for ongoing coaching or mentorship to level up your skills
                   </li>
                 </ul>
               </div>
@@ -232,20 +259,24 @@ export default function HomePage() {
               <div className="modern-card">
                 <h3 className="text-2xl font-bold text-red-600 dark:text-red-400 mb-6 flex items-center">
                   <FiX className="mr-3 h-6 w-6" />
-                  Not right if you need...
+                  ❌ Not the right fit if you…
                 </h3>
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start">
                     <FiX className="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
-                    A complete app built for you (done-for-you service)
+                    Expect a complete app built for you (done-for-you build service)
                   </li>
                   <li className="flex items-start">
                     <FiX className="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Security audit or code review
+                    Need a formal security audit or penetration test
                   </li>
                   <li className="flex items-start">
                     <FiX className="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Ongoing support or mentorship
+                    Require a full code review of a large codebase
+                  </li>
+                  <li className="flex items-start">
+                    <FiX className="h-5 w-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
+                    Want round-the-clock support outside booked sessions
                   </li>
                 </ul>
               </div>

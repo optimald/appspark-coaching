@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://appspark.ai/sitemap.xml
+
+# Disallow admin or private areas (none currently)
+# Disallow: /admin/
+
+# Allow all search engines to crawl the site
+# This site is optimized for SEO and user experience
