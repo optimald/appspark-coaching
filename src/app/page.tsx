@@ -28,16 +28,16 @@ export default function HomePage() {
             <div className="text-center max-w-6xl mx-auto">
               <div className="animate-fade-in">
                 {/* Cursor Logo and Synopsis */}
-                <div className="flex items-center justify-center mb-8">
-                  <div className="flex items-center space-x-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+                <div className="flex items-center justify-center mb-8 px-4">
+                  <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-2xl">
                     <img 
                       src="/assets/images/cursor-logo.svg" 
                       alt="Cursor Logo" 
-                      className="w-12 h-12"
+                      className="w-12 h-12 flex-shrink-0"
                     />
-                    <div className="text-left">
+                    <div className="text-center md:text-left">
                       <h3 className="text-xl font-bold text-white mb-2">Why Cursor?</h3>
-                      <p className="text-gray-300 text-sm max-w-md">
+                      <p className="text-gray-300 text-sm">
                         The AI-first code editor that transforms how you build. Cursor combines the power of VS Code with 
                         intelligent AI assistance, making coding faster, smarter, and more intuitive than ever before.
                       </p>
@@ -45,48 +45,48 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <h1 className="display-text mb-8">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8 px-4">
                   Make Cursor work for you in{' '}
                   <span className="gradient-text">
                     60 minutes
                   </span>
                 </h1>
-                <p className="text-2xl md:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed px-4">
                   One focused session. Practical shortcuts. A clear next step.
                 </p>
               </div>
             
               {/* Micro-proof */}
-              <div className="animate-slide-up">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
-                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/20">
+              <div className="animate-slide-up px-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-16 max-w-4xl mx-auto">
+                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
                     <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300 font-medium">Hands-on guidance via screenshare</span>
+                    <span className="text-gray-300 font-medium text-sm md:text-base">Hands-on guidance via screenshare</span>
                   </div>
-                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/20">
+                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
                     <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300 font-medium">Proven shortcuts & workflows</span>
+                    <span className="text-gray-300 font-medium text-sm md:text-base">Proven shortcuts & workflows</span>
                   </div>
-                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/20">
+                  <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
                     <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300 font-medium">Immediate practical results</span>
+                    <span className="text-gray-300 font-medium text-sm md:text-base">Immediate practical results</span>
                   </div>
                 </div>
               </div>
 
               {/* CTA Button */}
-              <div className="animate-fade-in">
+              <div className="animate-fade-in px-4">
                 <a
                   href="https://calendly.com/optimaldev/appspark-coaching-session"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary text-xl px-12 py-6 inline-flex items-center mb-6"
+                  className="btn-primary text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 inline-flex items-center mb-6"
                   onClick={() => trackCalendlyClicked('hero')}
                 >
                   Book your session
-                  <FiArrowRight className="ml-3 h-6 w-6" />
+                  <FiArrowRight className="ml-2 md:ml-3 h-5 md:h-6 w-5 md:w-6" />
                 </a>
-                <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">
+                <p className="text-base md:text-lg text-gray-400 font-medium">
                   $150 • 60 minutes • No refunds
                 </p>
               </div>
@@ -307,7 +307,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <Logo showText={true} className="mb-4" />
+              <Logo className="mb-4" />
               <p className="text-gray-400 mb-4">
                 60-minute focused Cursor coaching sessions. Practical shortcuts. Clear next steps.
               </p>

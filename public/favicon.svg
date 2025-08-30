@@ -1,0 +1,34 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="sparkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00F5FF" />
+      <stop offset="100%" stopColor="#0066FF" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#050816" />
+  
+  <!-- Spark icon -->
+  <g filter="url(#glow)" transform="translate(10, 7) scale(1.1)">
+    <path
+      d="M30 10L15 40H25L20 50L45 25H32L40 10H30Z"
+      fill="url(#sparkGradient)"
+    />
+  </g>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.6">
+    <circle cx="48" cy="16" r="2" fill="#00F5FF" />
+    <circle cx="52" cy="24" r="1.5" fill="#0066FF" />
+    <circle cx="44" cy="28" r="1" fill="#FFFFFF" />
+  </g>
+</svg> 

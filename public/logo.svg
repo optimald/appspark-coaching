@@ -1,0 +1,59 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="sparkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00F5FF" />
+      <stop offset="100%" stopColor="#0066FF" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#B4C6EF" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Spark icon -->
+  <g filter="url(#glow)">
+    <path
+      d="M30 10L15 40H25L20 50L45 25H32L40 10H30Z"
+      fill="url(#sparkGradient)"
+    />
+  </g>
+
+  <!-- App text -->
+  <g>
+    <text
+      x="60"
+      y="38"
+      fill="url(#textGradient)"
+      font-family="'Exo 2', system-ui, sans-serif"
+      font-size="32"
+      font-weight="bold"
+      letter-spacing="0.5"
+    >
+      AppSpark
+    </text>
+    
+    <!-- Underline accent -->
+    <path
+      d="M60 42h140"
+      stroke="url(#sparkGradient)"
+      stroke-width="1"
+      stroke-dasharray="1 3"
+      opacity="0.6"
+    />
+  </g>
+
+  <!-- Decorative elements -->
+  <g opacity="0.6">
+    <circle cx="180" cy="15" r="2" fill="#00F5FF" />
+    <circle cx="195" cy="25" r="1.5" fill="#0066FF" />
+    <circle cx="210" cy="15" r="1" fill="#FFFFFF" />
+  </g>
+</svg> 
