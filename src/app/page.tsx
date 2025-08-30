@@ -31,7 +31,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-center mb-8 px-4">
                   <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-2xl">
                     <img 
-                      src="/assets/images/cursor-logo.svg" 
+                      src="/assets/images/cursor-logo-official.svg" 
                       alt="Cursor Logo" 
                       className="w-12 h-12 flex-shrink-0"
                     />
@@ -276,12 +276,12 @@ export default function HomePage() {
             </div>
             
             <div className="max-w-4xl mx-auto">
-              <div className="modern-card">
-                {/* Calendly Embed */}
+              <div className="modern-card overflow-hidden">
+                {/* Calendly Embed - Clean and expanded */}
                 <div 
-                  className="calendly-inline-widget" 
-                  data-url="https://calendly.com/optimaldev/appspark-coaching-session"
-                  style={{ minWidth: '320px', height: '700px' }}
+                  className="calendly-inline-widget calendly-embed-clean" 
+                  data-url="https://calendly.com/optimaldev/appspark-coaching-session?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=6366f1"
+                  style={{ minWidth: '320px', height: '800px' }}
                 />
                 <script 
                   type="text/javascript" 
