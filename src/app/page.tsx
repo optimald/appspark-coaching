@@ -24,7 +24,19 @@ export default function HomePage() {
         <section className="pt-8 pb-20 md:pt-12 md:pb-32">
           <div className="container mx-auto container-padding">
             <div className="text-center max-w-6xl mx-auto">
-                              <div className="animate-fade-in">
+                                              <div className="animate-fade-in">
+                        {/* Special Offer Badge */}
+                        <div className="mb-8 px-4">
+                          <div className="inline-flex items-center justify-center">
+                            <div className="relative">
+                              <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-pink-500 rounded-full blur-lg opacity-75"></div>
+                              <div className="relative bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl animate-pulse">
+                                🎉 INTRO OFFER: 50% OFF
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8 px-4">
                   Make Cursor work for you in{' '}
                   <span className="gradient-text">
@@ -34,7 +46,7 @@ export default function HomePage() {
                 <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed px-4">
                   One focused session. Practical shortcuts. A clear next step.
                 </p>
-              </div>
+                      </div>
             
               {/* Micro-proof */}
               <div className="animate-slide-up px-4">
@@ -66,9 +78,11 @@ export default function HomePage() {
                   Book your session
                   <FiArrowRight className="ml-2 md:ml-3 h-5 md:h-6 w-5 md:w-6" />
                 </a>
-                <p className="text-base md:text-lg text-gray-400 font-medium">
-                  $150 • 60 minutes
-                </p>
+                <div className="text-base md:text-lg font-medium">
+                  <span className="text-gray-500 line-through mr-2">$150</span>
+                  <span className="text-green-400 font-bold text-xl">$75</span>
+                  <span className="text-gray-400 ml-2">• 60 minutes</span>
+                </div>
               </div>
             </div>
           </div>
@@ -319,8 +333,19 @@ export default function HomePage() {
                 {/* Direct Calendly Link */}
                 <div className="text-center p-12">
                   <div className="mb-8">
-                    <div className="text-6xl md:text-7xl font-bold mb-4">
-                      <span className="gradient-text">$150</span>
+                    {/* Special Offer Pricing */}
+                    <div className="mb-4">
+                      <div className="inline-flex items-center justify-center mb-4">
+                        <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
+                          🎉 INTRO OFFER: 50% OFF
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-center gap-4 mb-2">
+                        <span className="text-3xl md:text-4xl text-gray-500 dark:text-gray-400 line-through">$150</span>
+                        <span className="text-6xl md:text-7xl font-bold">
+                          <span className="gradient-text">$75</span>
+                        </span>
+                      </div>
                     </div>
                     <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                       60-minute focused session
