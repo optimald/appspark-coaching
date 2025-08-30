@@ -1,12 +1,28 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from '@/components/Logo';
 import ThemeToggle from '@/components/ThemeToggle';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight } from 'react-icons/fi';
 
 export default function HomePage() {
+  useEffect(() => {
+    // Load Calendly script
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col">
       {/* Header */}
@@ -277,17 +293,13 @@ export default function HomePage() {
             
             <div className="max-w-4xl mx-auto">
               <div className="modern-card overflow-hidden">
-                {/* Calendly Embed - Clean and expanded */}
+                {/* Calendly Embed */}
                 <div 
-                  className="calendly-inline-widget calendly-embed-clean" 
-                  data-url="https://calendly.com/optimaldev/appspark-coaching-session?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=6366f1"
-                  style={{ minWidth: '320px', height: '800px' }}
+                  className="calendly-inline-widget" 
+                  data-url="https://calendly.com/optimaldev/appspark-coaching-session"
+                  style={{ minWidth: '320px', height: '700px' }}
                 />
-                <script 
-                  type="text/javascript" 
-                  src="https://assets.calendly.com/assets/external/widget.js" 
-                  async
-                />
+
                 
                 <div className="mt-6 text-center">
                   <p className="text-sm text-gray-500 dark:text-gray-400">
