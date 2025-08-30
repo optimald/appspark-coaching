@@ -1,26 +1,12 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Logo from '@/components/Logo';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight } from 'react-icons/fi';
+import { InlineWidget } from 'react-calendly';
 
 export default function HomePage() {
-  useEffect(() => {
-    // Load Calendly script
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, []);
 
   return (
     <main className="flex min-h-screen flex-col">
@@ -288,14 +274,40 @@ export default function HomePage() {
             </div>
             
             <div className="max-w-4xl mx-auto">
-              <div className="modern-card overflow-hidden">
-                {/* Calendly Embed */}
-                <div 
-                  className="calendly-inline-widget" 
-                  data-url="https://calendly.com/optimaldev/appspark-coaching-session"
-                  style={{ minWidth: '320px', height: '700px' }}
+              <div className="modern-card overflow-hidden calendly-container">
+                {/* Calendly Embed with React Component */}
+                <InlineWidget 
+                  url="https://calendly.com/optimaldev/appspark-coaching-session"
+                  styles={{
+                    height: '700px',
+                    minWidth: '320px'
+                  }}
                 />
-
+                
+                {/* CSS to hide Calendly branding and text */}
+                <style jsx global>{`
+                  .calendly-container iframe {
+                    height: 700px !important;
+                  }
+                  
+                  /* Hide Calendly branding */
+                  .calendly-badge-widget,
+                  .calendly-badge-content,
+                  [data-calendly-branding],
+                  .calendly-popup-close,
+                  .calendly-overlay,
+                  .calendly-spinner,
+                  .calendly-badge {
+                    display: none !important;
+                    visibility: hidden !important;
+                  }
+                  
+                  /* Hide event description and details */
+                  .calendly-container iframe[src*="calendly"] {
+                    transform: translateY(-120px);
+                    height: 820px !important;
+                  }
+                `}</style>
                 
                 <div className="mt-6 text-center">
                   <p className="text-sm text-gray-500 dark:text-gray-400">
