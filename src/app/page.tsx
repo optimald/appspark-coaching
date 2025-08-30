@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 import Logo from '@/components/Logo';
-import ThemeToggle from '@/components/ThemeToggle';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight } from 'react-icons/fi';
 
@@ -26,20 +25,17 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="absolute top-0 w-full z-50 bg-transparent">
+      <header className="sticky top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Logo size="md" />
-            <div className="hidden md:block">
-              <ThemeToggle />
-            </div>
           </div>
         </div>
       </header>
 
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="pt-20 pb-20 md:pt-24 md:pb-32">
+        <section className="pt-8 pb-20 md:pt-12 md:pb-32">
           <div className="container mx-auto container-padding">
             <div className="text-center max-w-6xl mx-auto">
               <div className="animate-fade-in">
