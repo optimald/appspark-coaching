@@ -27,13 +27,31 @@ export default function HomePage() {
           <div className="container mx-auto container-padding">
             <div className="text-center max-w-6xl mx-auto">
               <div className="animate-fade-in">
+                {/* Cursor Logo and Synopsis */}
+                <div className="flex items-center justify-center mb-8">
+                  <div className="flex items-center space-x-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+                    <img 
+                      src="/assets/images/cursor-logo.svg" 
+                      alt="Cursor Logo" 
+                      className="w-12 h-12"
+                    />
+                    <div className="text-left">
+                      <h3 className="text-xl font-bold text-white mb-2">Why Cursor?</h3>
+                      <p className="text-gray-300 text-sm max-w-md">
+                        The AI-first code editor that transforms how you build. Cursor combines the power of VS Code with 
+                        intelligent AI assistance, making coding faster, smarter, and more intuitive than ever before.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 <h1 className="display-text mb-8">
                   Make Cursor work for you in{' '}
                   <span className="gradient-text">
                     60 minutes
                   </span>
                 </h1>
-                <p className="text-2xl md:text-3xl mb-12 text-gray-600 dark:text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
+                <p className="text-2xl md:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
                   One focused session. Practical shortcuts. A clear next step.
                 </p>
               </div>
