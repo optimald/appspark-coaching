@@ -123,7 +123,7 @@ export default function HomePage() {
                                                 {/* Cursor Logo */}
                               <div className="flex-shrink-0">
                                 <img
-                                  src="/assets/images/cursor-logo-official.webp"
+                                  src="/assets/images/cursor-logo.svg"
                                   alt="Cursor Logo"
                                   className="w-20 h-20 md:w-24 md:h-24"
                                 />
