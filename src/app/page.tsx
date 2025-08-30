@@ -87,7 +87,7 @@ export default function HomePage() {
                   <FiArrowRight className="ml-2 md:ml-3 h-5 md:h-6 w-5 md:w-6" />
                 </a>
                 <p className="text-base md:text-lg text-gray-400 font-medium">
-                  $150 • 60 minutes • No refunds
+                  $150 • 60 minutes
                 </p>
               </div>
             </div>
