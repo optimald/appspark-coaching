@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: 'AppSpark — 60-Minute Custom Cursor Session',
   description: 'Make Cursor work for you in 60 minutes. One focused session. Practical shortcuts. A clear next step.',
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+    ],
     shortcut: '/favicon.svg',
     apple: '/favicon.svg',
   },

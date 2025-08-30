@@ -1,0 +1,38 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark version for light backgrounds -->
+  <g fill="#1e293b">
+    <!-- Top headphones/VR elements -->
+    <rect x="20" y="25" width="8" height="20" rx="4"/>
+    <rect x="92" y="25" width="8" height="20" rx="4"/>
+    
+    <!-- Main headphone band -->
+    <path d="M35 20 Q60 10 85 20 Q95 25 95 35 L95 45 Q95 50 90 50 L85 50 Q80 50 80 45 L80 35 Q80 30 75 30 L45 30 Q40 30 40 35 L40 45 Q40 50 35 50 L30 50 Q25 50 25 45 L25 35 Q25 25 35 20 Z"/>
+    
+    <!-- Side connection dots -->
+    <circle cx="15" cy="35" r="4"/>
+    <circle cx="105" cy="35" r="4"/>
+    
+    <!-- Side lines -->
+    <rect x="5" y="32" width="8" height="6" rx="3"/>
+    <rect x="107" y="32" width="8" height="6" rx="3"/>
+    
+    <!-- Main body - rounded rectangle base -->
+    <rect x="15" y="55" width="90" height="25" rx="12"/>
+    
+    <!-- Central A triangle -->
+    <path d="M60 35 L45 75 L52 75 L55 67 L65 67 L68 75 L75 75 L60 35 Z M57 58 L63 58 L60 50 L57 58 Z"/>
+    
+    <!-- Bottom connection elements -->
+    <circle cx="25" cy="90" r="4"/>
+    <circle cx="95" cy="90" r="4"/>
+    
+    <!-- Bottom side lines -->
+    <rect x="5" y="87" width="8" height="6" rx="3"/>
+    <rect x="107" y="87" width="8" height="6" rx="3"/>
+    
+    <!-- Bottom dots -->
+    <rect x="45" y="95" width="4" height="8" rx="2"/>
+    <rect x="55" y="95" width="4" height="8" rx="2"/>
+    <rect x="65" y="95" width="4" height="8" rx="2"/>
+  </g>
+</svg>
