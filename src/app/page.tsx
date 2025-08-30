@@ -54,7 +54,9 @@ export default function HomePage() {
             {/* CTA Button */}
             <div className="mb-16">
               <a
-                href="#calendly"
+                href="https://calendly.com/optimaldev/appspark-coaching-session"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary text-lg px-8 py-4 inline-flex items-center"
                 onClick={() => trackCalendlyClicked('hero')}
               >
@@ -243,26 +245,17 @@ export default function HomePage() {
             
             <div className="max-w-4xl mx-auto">
               <div className="modern-card">
-                {/* Calendly Embed Placeholder */}
-                <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-12 text-center">
-                  <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FiClock className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                    Calendly Integration Coming Soon
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    The Calendly booking widget will be embedded here. For now, you can reach out directly.
-                  </p>
-                  <a
-                    href="mailto:info@appspark.ai"
-                    className="btn-primary inline-flex items-center"
-                    onClick={() => trackEmailContact('calendly-placeholder')}
-                  >
-                    Contact directly
-                    <FiArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </div>
+                {/* Calendly Embed */}
+                <div 
+                  className="calendly-inline-widget" 
+                  data-url="https://calendly.com/optimaldev/appspark-coaching-session"
+                  style={{ minWidth: '320px', height: '700px' }}
+                />
+                <script 
+                  type="text/javascript" 
+                  src="https://assets.calendly.com/assets/external/widget.js" 
+                  async
+                />
                 
                 <div className="mt-6 text-center">
                   <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -291,7 +284,13 @@ export default function HomePage() {
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#calendly" className="text-gray-400 hover:text-white transition-colors">
+                  <a 
+                    href="https://calendly.com/optimaldev/appspark-coaching-session"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    onClick={() => trackCalendlyClicked('footer')}
+                  >
                     Book Session
                   </a>
                 </li>
