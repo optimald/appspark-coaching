@@ -10,10 +10,10 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="sticky top-0 w-full z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+      <header className="absolute top-0 w-full z-50 bg-transparent">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <Logo className="w-10 h-10 md:w-12 md:h-12" />
+            <Logo size="md" />
             <div className="hidden md:block">
               <ThemeToggle />
             </div>
@@ -23,7 +23,7 @@ export default function HomePage() {
 
       <div className="flex-grow">
         {/* Hero Section */}
-        <section className="section-spacing">
+        <section className="pt-20 pb-20 md:pt-24 md:pb-32">
           <div className="container mx-auto container-padding">
             <div className="text-center max-w-6xl mx-auto">
               <div className="animate-fade-in">
