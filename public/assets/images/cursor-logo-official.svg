@@ -1,12 +1,37 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Cursor's actual logo design - cursor/pointer icon -->
-  <path d="M3 3L3 17L8 12L11 14L13 12L9 9L15 9L3 3Z" fill="currentColor"/>
-  <path d="M3 3L3 17L8 12L11 14L13 12L9 9L15 9L3 3Z" fill="url(#cursorGrad)" opacity="0.8"/>
-  
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="cursorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3B82F6"/>
-      <stop offset="100%" style="stop-color:#1D4ED8"/>
+    <!-- Cursor's signature gradient -->
+    <linearGradient id="cursorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="25%" style="stop-color:#3B82F6"/>
+      <stop offset="50%" style="stop-color:#06B6D4"/>
+      <stop offset="75%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
+    </linearGradient>
+    
+    <!-- Shadow gradient -->
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
     </linearGradient>
   </defs>
+  
+  <!-- Cursor 3D cube logo -->
+  <!-- Front face -->
+  <path d="M12 20 L24 14 L36 20 L24 26 Z" fill="url(#cursorGradient)" opacity="0.9"/>
+  
+  <!-- Right face -->
+  <path d="M24 14 L36 20 L36 32 L24 26 Z" fill="url(#cursorGradient)" opacity="0.7"/>
+  
+  <!-- Left face -->
+  <path d="M12 20 L24 26 L24 38 L12 32 Z" fill="url(#cursorGradient)" opacity="0.5"/>
+  
+  <!-- Top face -->
+  <path d="M24 14 L36 20 L24 26 L12 20 Z" fill="url(#cursorGradient)"/>
+  
+  <!-- Highlight on top edge -->
+  <path d="M12 20 L24 14 L36 20 L24 20 Z" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Shadow -->
+  <path d="M12 32 L24 38 L36 32 L36 34 L24 40 L12 34 Z" fill="url(#shadowGradient)"/>
 </svg>

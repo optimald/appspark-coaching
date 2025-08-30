@@ -25,20 +25,57 @@ export default function HomePage() {
           <div className="container mx-auto container-padding">
             <div className="text-center max-w-6xl mx-auto">
               <div className="animate-fade-in">
-                {/* Cursor Logo and Synopsis */}
-                <div className="flex items-center justify-center mb-8 px-4">
-                  <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-2xl">
-                    <img 
-                      src="/assets/images/cursor-logo-official.svg" 
-                      alt="Cursor Logo" 
-                      className="w-12 h-12 flex-shrink-0"
-                    />
-                    <div className="text-center md:text-left">
-                      <h3 className="text-xl font-bold text-white mb-2">Why Cursor?</h3>
-                      <p className="text-gray-300 text-sm">
-                        The AI-first code editor that transforms how you build. Cursor combines the power of VS Code with 
-                        intelligent AI assistance, making coding faster, smarter, and more intuitive than ever before.
-                      </p>
+                {/* Cursor Logo and Synopsis - Matching Cursor's Theme */}
+                <div className="flex items-center justify-center mb-12 px-4">
+                  <div className="relative max-w-4xl w-full">
+                    {/* Gradient background matching Cursor's style */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 via-cyan-500/20 via-emerald-500/20 to-amber-500/20 rounded-3xl blur-xl"></div>
+                    
+                    <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 p-8 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/10">
+                      {/* Cursor Logo */}
+                      <div className="flex-shrink-0">
+                        <img 
+                          src="/assets/images/cursor-logo-official.svg" 
+                          alt="Cursor Logo" 
+                          className="w-16 h-16 md:w-20 md:h-20"
+                        />
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="text-center md:text-left flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                          <span className="bg-gradient-to-r from-purple-400 via-blue-400 via-cyan-400 via-emerald-400 to-amber-400 bg-clip-text text-transparent">
+                            Why Cursor?
+                          </span>
+                        </h3>
+                        <p className="text-gray-300 text-lg leading-relaxed">
+                          The <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">AI-first code editor</span> that transforms how you build. 
+                          <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-semibold"> Cursor</span> combines the power of VS Code with 
+                          intelligent AI assistance, making coding faster, smarter, and more intuitive than ever before.
+                        </p>
+                        
+                        {/* Feature highlights */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                          <div className="text-center md:text-left">
+                            <div className="text-sm font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                              AI Pair Programming
+                            </div>
+                            <div className="text-xs text-gray-400">Code with AI assistance</div>
+                          </div>
+                          <div className="text-center md:text-left">
+                            <div className="text-sm font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                              Smart Completions
+                            </div>
+                            <div className="text-xs text-gray-400">Context-aware suggestions</div>
+                          </div>
+                          <div className="text-center md:text-left">
+                            <div className="text-sm font-semibold bg-gradient-to-r from-emerald-400 to-amber-400 bg-clip-text text-transparent">
+                              Natural Language
+                            </div>
+                            <div className="text-xs text-gray-400">Edit code by describing</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
