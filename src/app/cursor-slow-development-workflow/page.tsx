@@ -5,10 +5,7 @@ import Logo from '@/components/Logo';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiCommand, FiRefreshCw } from 'react-icons/fi';
 
-export const metadata = {
-  title: 'Speed Up Slow Cursor Development Workflow | AppSpark Coaching',
-  description: 'Transform your slow Cursor workflow into a productivity powerhouse. Learn shortcuts, AI workflows, and optimization techniques in 60 minutes.',
-};
+// Metadata moved to layout.tsx since this is a client component
 
 export default function CursorSlowWorkflowPage() {
   return (

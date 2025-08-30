@@ -5,10 +5,7 @@ import Logo from '@/components/Logo';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiLayers, FiDatabase } from 'react-icons/fi';
 
-export const metadata = {
-  title: 'Fix Cursor AI Context Problems | AppSpark Coaching',
-  description: 'Get Cursor AI to understand your codebase properly. Learn context management, .cursorrules setup, and project organization in 60 minutes.',
-};
+// Metadata moved to layout.tsx since this is a client component
 
 export default function CursorAIContextPage() {
   return (

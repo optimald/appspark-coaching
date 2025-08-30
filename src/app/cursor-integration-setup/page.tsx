@@ -5,10 +5,7 @@ import Logo from '@/components/Logo';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiGitBranch, FiTerminal } from 'react-icons/fi';
 
-export const metadata = {
-  title: 'Fix Cursor Integration Setup | AppSpark Coaching',
-  description: 'Connect Cursor with your dev stack seamlessly. Git, Docker, CI/CD, and terminal integration setup in 60 minutes.',
-};
+// Metadata moved to layout.tsx since this is a client component
 
 export default function CursorIntegrationPage() {
   return (

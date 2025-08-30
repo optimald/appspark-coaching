@@ -5,10 +5,7 @@ import Logo from '@/components/Logo';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiAlertCircle, FiSearch } from 'react-icons/fi';
 
-export const metadata = {
-  title: 'Fix Cursor Debugging Problems | AppSpark Coaching',
-  description: 'Master Cursor debugging with AI assistance. Learn to set up debuggers, use AI for error analysis, and troubleshoot effectively in 60 minutes.',
-};
+// Metadata moved to layout.tsx since this is a client component
 
 export default function CursorDebuggingPage() {
   return (
