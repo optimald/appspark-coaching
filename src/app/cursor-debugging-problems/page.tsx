@@ -280,7 +280,7 @@ export default function CursorDebuggingPage() {
                   <div className="mb-8">
                     <div className="mb-4">
                       <div className="inline-flex items-center justify-center mb-4">
-                        <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
+                        <div className="bg-gradient-to-r from-purple-500 via-blue-500 to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
                           🎉 INTRO OFFER: 50% OFF
                         </div>
                       </div>

@@ -56,8 +56,8 @@ export default function HomePage() {
                         <div className="mb-8 px-4">
                           <div className="inline-flex items-center justify-center">
                             <div className="relative">
-                              <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-pink-500 rounded-full blur-lg opacity-75"></div>
-                              <div className="relative bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl animate-pulse">
+                              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-blue-500 to-emerald-500 rounded-full blur-lg opacity-75"></div>
+                              <div className="relative bg-gradient-to-r from-purple-500 via-blue-500 to-emerald-500 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl animate-pulse">
                                 INTRO OFFER: 50% OFF
                               </div>
                             </div>
@@ -65,13 +65,13 @@ export default function HomePage() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8 px-4">
-                  Master <span className="gradient-text">vibe code</span> with Cursor in{' '}
+                  One hour to{' '}
                   <span className="gradient-text">
-                    60 minutes
+                    accelerate your vibe coding
                   </span>
                 </h1>
                 <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed px-4">
-                  One focused session. Learn to code with words, not syntax. A clear next step.
+                  Direct, hands-on coaching with Cursor. Stop fighting AI. Start collaborating with it.
                 </p>
                       </div>
             
@@ -374,7 +374,7 @@ export default function HomePage() {
                     {/* Special Offer Pricing */}
                     <div className="mb-4">
                       <div className="inline-flex items-center justify-center mb-4">
-                        <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
+                        <div className="bg-gradient-to-r from-purple-500 via-blue-500 to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
                           INTRO OFFER: 50% OFF
                         </div>
                       </div>
