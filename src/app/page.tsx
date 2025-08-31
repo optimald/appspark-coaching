@@ -140,7 +140,7 @@ export default function HomePage() {
                   <div className="text-center md:text-left flex-1">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                       <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent">
-                        Why Vibe Code?
+                        Why Vibe Code with Cursor?
                       </span>
                     </h2>
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
