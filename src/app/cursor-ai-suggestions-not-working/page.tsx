@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Logo from '@/components/Logo';
+import Footer from '@/components/Footer';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiCode, FiSettings } from 'react-icons/fi';
 
@@ -245,31 +246,7 @@ export default function CursorAISuggestionsPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <Logo className="mb-4" />
-              <p className="text-gray-400 mb-4">
-                60-minute focused Cursor coaching sessions. Practical shortcuts. Clear next steps.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Cursor Issues We Fix</h3>
-              <ul className="space-y-2">
-                <li><a href="/cursor-ai-suggestions-not-working" className="text-gray-400 hover:text-white transition-colors">AI Suggestions Not Working</a></li>
-                <li><a href="/cursor-slow-development-workflow" className="text-gray-400 hover:text-white transition-colors">Slow Development Workflow</a></li>
-                <li><a href="/cursor-debugging-problems" className="text-gray-400 hover:text-white transition-colors">Debugging Problems</a></li>
-                <li><a href="/cursor-ai-context-problems" className="text-gray-400 hover:text-white transition-colors">AI Context Issues</a></li>
-                <li><a href="/cursor-integration-setup" className="text-gray-400 hover:text-white transition-colors">Integration Setup</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} AppSpark. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

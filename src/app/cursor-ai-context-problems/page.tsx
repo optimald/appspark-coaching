@@ -2,8 +2,9 @@
 
 import React from 'react';
 import Logo from '@/components/Logo';
+import Footer from '@/components/Footer';
 import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
-import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiLayers, FiDatabase } from 'react-icons/fi';
+import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight, FiZap, FiCode, FiSettings } from 'react-icons/fi';
 
 // Metadata moved to layout.tsx since this is a client component
 
@@ -121,7 +122,7 @@ export default function CursorAIContextPage() {
 
               <div className="modern-card text-center feature-card group">
                 <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <FiLayers className="h-10 w-10 text-white" />
+                  <FiCode className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white">
                   Project Structure Optimization
@@ -133,7 +134,7 @@ export default function CursorAIContextPage() {
 
               <div className="modern-card text-center feature-card group">
                 <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <FiDatabase className="h-10 w-10 text-white" />
+                  <FiSettings className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white">
                   Context Management Strategies
@@ -174,7 +175,7 @@ export default function CursorAIContextPage() {
                 
                 <div className="modern-card">
                   <h3 className="text-xl font-bold mb-4 text-white flex items-center">
-                    <FiLayers className="mr-3 h-5 w-5 text-green-400" />
+                    <FiCode className="mr-3 h-5 w-5 text-green-400" />
                     Project Organization
                   </h3>
                   <ul className="space-y-2 text-gray-300">
@@ -204,7 +205,7 @@ export default function CursorAIContextPage() {
                 
                 <div className="modern-card">
                   <h3 className="text-xl font-bold mb-4 text-white flex items-center">
-                    <FiDatabase className="mr-3 h-5 w-5 text-orange-400" />
+                    <FiSettings className="mr-3 h-5 w-5 text-orange-400" />
                     Large Codebase Management
                   </h3>
                   <ul className="space-y-2 text-gray-300">
@@ -322,31 +323,7 @@ export default function CursorAIContextPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <Logo className="mb-4" />
-              <p className="text-gray-400 mb-4">
-                60-minute focused Cursor coaching sessions. Practical shortcuts. Clear next steps.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Cursor Issues We Fix</h3>
-              <ul className="space-y-2">
-                <li><a href="/cursor-ai-suggestions-not-working" className="text-gray-400 hover:text-white transition-colors">AI Suggestions Not Working</a></li>
-                <li><a href="/cursor-slow-development-workflow" className="text-gray-400 hover:text-white transition-colors">Slow Development Workflow</a></li>
-                <li><a href="/cursor-debugging-problems" className="text-gray-400 hover:text-white transition-colors">Debugging Problems</a></li>
-                <li><a href="/cursor-ai-context-problems" className="text-gray-400 hover:text-white transition-colors">AI Context Issues</a></li>
-                <li><a href="/cursor-integration-setup" className="text-gray-400 hover:text-white transition-colors">Integration Setup</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} AppSpark. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
