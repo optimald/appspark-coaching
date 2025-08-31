@@ -306,8 +306,7 @@ export default function HomePage() {
                   What will we cover?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  We'll focus on your specific objective: creating a project scaffold through AI conversation, removing a vibe code blocker, 
-                  unblocking deployment using AI collaboration, or optimizing your AI development workflow. One clear outcome per session.
+                  We'll zero in on your most important goal: creating a project scaffold, removing a vibe code blocker, unblocking a deployment, or optimizing your AI-assisted workflow. Each session delivers one clear, practical outcome.
                 </p>
               </div>
               
@@ -316,8 +315,7 @@ export default function HomePage() {
                   Do you record sessions?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Only with your consent. If recorded, you'll get a link that expires in 7 days. 
-                  You'll always receive written After-Action Notes regardless.
+                  Only with your consent. If you'd like a recording, you'll get a private link that expires in 7 days. You'll always receive concise After-Action Notes with changes made, key snippets, and your next steps.
                 </p>
               </div>
               
@@ -326,8 +324,7 @@ export default function HomePage() {
                   What are the reschedule/cancel rules?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Free reschedule with ≥12 hours notice. Less than 12 hours requires a new booking. 
-                  No refunds offered - this keeps sessions focused and valuable.
+                  You can reschedule for free with at least 12 hours' notice. Less than 12 hours requires a new booking. Refunds aren't offered — this keeps the focus sharp and the time respected.
                 </p>
               </div>
               
@@ -336,8 +333,7 @@ export default function HomePage() {
                   Will you write code?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  This is hands-on vibe code coaching. I'll guide you through AI collaboration, share proven conversation patterns, 
-                  and work alongside you to solve your specific challenge through natural language.
+                  This is hands-on coaching. I'll work alongside you in Cursor, guiding your prompts, sharing proven patterns, and accelerating your progress through AI collaboration.
                 </p>
               </div>
               
@@ -346,8 +342,7 @@ export default function HomePage() {
                   Can I book more time?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Absolutely! Each session is standalone, but you can book additional sessions 
-                  using the same booking link. No packages or bundles - just focused, valuable sessions.
+                  Yes. Each session stands alone, but you're welcome to book as many as you need through the same link. No bundles or lock-ins — just focused sessions when you want them.
                 </p>
               </div>
             </div>
