@@ -1,8 +1,9 @@
 'use client';
 
-import React from 'react';
+import * as React from 'react';
 import Logo from '@/components/Logo';
-import { trackCalendlyClicked, trackEmailContact } from '@/lib/analytics';
+import { trackCalendlyClicked, trackEmailContact, trackExternalLinkClick } from '@/lib/analytics';
+import { SITE_CONFIG } from '@/lib/constants';
 import { FiCheck, FiX, FiClock, FiVideo, FiFileText, FiArrowRight } from 'react-icons/fi';
 // Removed react-calendly import - using direct link instead
 
@@ -11,7 +12,10 @@ export default function HomePage() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="sticky top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+      <header 
+        className="sticky top-0 w-full z-50 backdrop-blur-md border-b border-white/10"
+        style={{ backgroundColor: `${SITE_CONFIG.colors.headerBg}E6` }} // E6 = 90% opacity
+      >
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Logo size="lg" />
@@ -54,7 +58,7 @@ export default function HomePage() {
                             <div className="relative">
                               <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-pink-500 rounded-full blur-lg opacity-75"></div>
                               <div className="relative bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl animate-pulse">
-                                🎉 INTRO OFFER: 50% OFF
+                                INTRO OFFER: 50% OFF
                               </div>
                             </div>
                           </div>
@@ -96,7 +100,10 @@ export default function HomePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 inline-flex items-center mb-6"
-                  onClick={() => trackCalendlyClicked('hero')}
+                  onClick={() => {
+                    trackCalendlyClicked('hero');
+                    trackExternalLinkClick('https://calendly.com/optimaldev/appspark-coaching-session', 'Book your session');
+                  }}
                 >
                   Book your session
                   <FiArrowRight className="ml-2 md:ml-3 h-5 md:h-6 w-5 md:w-6" />
@@ -117,22 +124,22 @@ export default function HomePage() {
             <div className="flex items-center justify-center px-4">
               <div className="relative max-w-6xl w-full">
                 {/* Gradient background matching Cursor's style */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 via-cyan-500/20 via-emerald-500/20 to-amber-500/20 rounded-3xl blur-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-emerald-500/20 rounded-3xl blur-xl"></div>
 
                 <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 p-8 md:p-12 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/10">
                                                 {/* Cursor Logo */}
                               <div className="flex-shrink-0">
                                 <img
-                                  src="/assets/images/cursor-logo.svg"
+                                  src="/assets/images/cursor.jpg"
                                   alt="Cursor Logo"
-                                  className="w-20 h-20 md:w-24 md:h-24"
+                                  className="w-20 h-20 md:w-24 md:h-24 rounded-lg"
                                 />
                   </div>
 
                   {/* Content */}
                   <div className="text-center md:text-left flex-1">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                      <span className="bg-gradient-to-r from-purple-400 via-blue-400 via-cyan-400 via-emerald-400 to-amber-400 bg-clip-text text-transparent">
+                      <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent">
                         Why Cursor?
                       </span>
                     </h2>
@@ -146,19 +153,19 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                          🤝 AI Pair Programming
+                          AI Pair Programming
                         </div>
                         <div className="text-sm text-gray-400">Like having a senior developer beside you—AI that reads your entire codebase and suggests solutions that actually fit</div>
                       </div>
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-                          ⚡ Predictive Completions
+                          Predictive Completions
                         </div>
                         <div className="text-sm text-gray-400">AI that finishes your thoughts—completions so accurate they feel like mind-reading, not guesswork</div>
                       </div>
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-emerald-400 to-amber-400 bg-clip-text text-transparent mb-2">
-                          💬 Code with Words
+                          Code with Words
                         </div>
                         <div className="text-sm text-gray-400">Describe what you want in plain English and watch AI write the exact code you need—no more syntax hunting</div>
                       </div>
@@ -234,7 +241,7 @@ export default function HomePage() {
               <div className="modern-card">
                 <h3 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-6 flex items-center">
                   <FiCheck className="mr-3 h-6 w-6" />
-                  ✅ Perfect if you…
+                  Perfect if you…
                 </h3>
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start">
@@ -259,7 +266,7 @@ export default function HomePage() {
               <div className="modern-card">
                 <h3 className="text-2xl font-bold text-red-600 dark:text-red-400 mb-6 flex items-center">
                   <FiX className="mr-3 h-6 w-6" />
-                  ❌ Not the right fit if you…
+                  Not the right fit if you…
                 </h3>
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start">
@@ -368,7 +375,7 @@ export default function HomePage() {
                     <div className="mb-4">
                       <div className="inline-flex items-center justify-center mb-4">
                         <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full font-bold text-sm animate-pulse">
-                          🎉 INTRO OFFER: 50% OFF
+                          INTRO OFFER: 50% OFF
                         </div>
                       </div>
                       <div className="flex items-center justify-center gap-4 mb-2">
@@ -388,7 +395,10 @@ export default function HomePage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary text-xl px-12 py-6 inline-flex items-center mb-8"
-                    onClick={() => trackCalendlyClicked('booking')}
+                    onClick={() => {
+                      trackCalendlyClicked('booking');
+                      trackExternalLinkClick('https://calendly.com/optimaldev/appspark-coaching-session', 'Schedule on Calendly');
+                    }}
                   >
                     Schedule on Calendly
                     <FiArrowRight className="ml-3 h-6 w-6" />
@@ -409,7 +419,7 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
+      <footer style={{ backgroundColor: SITE_CONFIG.colors.footerBg }} className="text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
@@ -419,15 +429,38 @@ export default function HomePage() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-xl font-semibold mb-4">Cursor Issues We Fix</h3>
               <ul className="space-y-2">
+                <li><a href="/cursor-ai-suggestions-not-working" className="text-gray-400 hover:text-white transition-colors">AI Suggestions Not Working</a></li>
+                <li><a href="/cursor-slow-development-workflow" className="text-gray-400 hover:text-white transition-colors">Slow Development Workflow</a></li>
+                <li><a href="/cursor-debugging-problems" className="text-gray-400 hover:text-white transition-colors">Debugging Problems</a></li>
+                <li><a href="/cursor-ai-context-problems" className="text-gray-400 hover:text-white transition-colors">AI Context Issues</a></li>
+                <li><a href="/cursor-integration-setup" className="text-gray-400 hover:text-white transition-colors">Integration Setup</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Contact</h3>
+              <p className="text-gray-400 mb-2">
+                <strong>Email:</strong>{' '}
+                <a 
+                  href={`mailto:${SITE_CONFIG.email}`}
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                  onClick={() => trackEmailContact('footer')}
+                >
+                  {SITE_CONFIG.email}
+                </a>
+              </p>
+              <ul className="space-y-2 mt-4">
                 <li>
                   <a 
-                    href="https://calendly.com/optimaldev/appspark-coaching-session"
+                    href={SITE_CONFIG.calendlyUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
-                    onClick={() => trackCalendlyClicked('footer')}
+                    onClick={() => {
+                      trackCalendlyClicked('footer');
+                      trackExternalLinkClick(SITE_CONFIG.calendlyUrl, 'Book Session');
+                    }}
                   >
                     Book Session
                   </a>
@@ -444,23 +477,10 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-gray-400 mb-2">
-                Have questions or need help?
-              </p>
-              <a
-                href="mailto:info@appspark.ai"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
-                onClick={() => trackEmailContact('footer')}
-              >
-                info@appspark.ai
-              </a>
-            </div>
           </div>
           <div className="mt-8 pt-6 border-t border-gray-800 text-center">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} AppSpark. All rights reserved.
+              © {new Date().getFullYear()} {SITE_CONFIG.companyName}. All rights reserved.
             </p>
           </div>
         </div>

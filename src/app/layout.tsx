@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import SpaceBackground from '@/components/SpaceBackground';
 import Analytics from '@/components/Analytics';
+import PageTracker from '@/components/PageTracker';
+import ScrollTracker from '@/components/ScrollTracker';
 
 export const metadata: Metadata = {
   title: 'AppSpark — 60-Minute Custom Cursor Session',
@@ -33,6 +35,8 @@ export default function RootLayout({
         <SpaceBackground />
         {children}
         <Analytics />
+        <PageTracker />
+        <ScrollTracker />
       </body>
     </html>
   );

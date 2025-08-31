@@ -42,10 +42,8 @@ const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
         />
       </div>
       
-      <div className={`text-white dark:text-white font-bold tracking-tight ${textSizeClasses[size]}`}>
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100 dark:from-white dark:to-blue-100">
-          AppSpark
-        </span>
+      <div className={`font-bold tracking-tight ${textSizeClasses[size]}`} style={{ color: '#E2ECFF' }}>
+        AppSpark
       </div>
     </div>
   );

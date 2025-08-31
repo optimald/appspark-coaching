@@ -125,8 +125,8 @@ export default function PrivacyPage() {
                 <h2>Contact Us</h2>
                 <p>
                   For privacy-related questions or requests, contact us at{' '}
-                  <a href="mailto:privacy@appspark.ai" className="text-blue-600 dark:text-blue-400">
-                    privacy@appspark.ai
+                  <a href="mailto:info@appspark.ai" className="text-blue-600 dark:text-blue-400">
+                    info@appspark.ai
                   </a>
                 </p>
 

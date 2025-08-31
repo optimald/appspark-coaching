@@ -37,7 +37,7 @@ export default function CursorIntegrationPage() {
                     <div className="relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-lg opacity-75"></div>
                       <div className="relative bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl">
-                        🔧 INTEGRATION HEADACHES?
+                        INTEGRATION HEADACHES?
                       </div>
                     </div>
                   </div>
@@ -375,7 +375,7 @@ export default function CursorIntegrationPage() {
       {/* Footer */}
       <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <Logo className="mb-4" />
               <p className="text-gray-400 mb-4">
@@ -391,10 +391,6 @@ export default function CursorIntegrationPage() {
                 <li><a href="/cursor-ai-context-problems" className="text-gray-400 hover:text-white transition-colors">AI Context Issues</a></li>
                 <li><a href="/cursor-integration-setup" className="text-gray-400 hover:text-white transition-colors">Integration Setup</a></li>
               </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Contact</h3>
-              <p className="text-gray-400">Email: <a href="mailto:badger@slickrockholdings.com" className="text-blue-400 hover:underline" onClick={() => trackEmailContact('footer')}>badger@slickrockholdings.com</a></p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
