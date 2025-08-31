@@ -65,13 +65,13 @@ export default function HomePage() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8 px-4">
-                  Make Cursor work for you in{' '}
+                  Master <span className="gradient-text">vibe code</span> with Cursor in{' '}
                   <span className="gradient-text">
                     60 minutes
                   </span>
                 </h1>
                 <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed px-4">
-                  One focused session. Practical shortcuts. A clear next step.
+                  One focused session. Learn to code with words, not syntax. A clear next step.
                 </p>
                       </div>
             
@@ -80,15 +80,15 @@ export default function HomePage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-16 max-w-4xl mx-auto">
                   <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
                     <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-300 font-medium text-sm md:text-base">Hands-on guidance via screenshare</span>
+                    <span className="text-gray-300 font-medium text-sm md:text-base">Hands-on vibe code guidance via screenshare</span>
                   </div>
                   <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
                     <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-300 font-medium text-sm md:text-base">Proven shortcuts & workflows</span>
+                    <span className="text-gray-300 font-medium text-sm md:text-base">Proven AI conversation patterns & workflows</span>
                   </div>
                   <div className="flex items-center justify-center p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20">
                     <FiCheck className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-300 font-medium text-sm md:text-base">Immediate practical results</span>
+                    <span className="text-gray-300 font-medium text-sm md:text-base">Immediate vibe code results</span>
                   </div>
                 </div>
               </div>
@@ -140,34 +140,34 @@ export default function HomePage() {
                   <div className="text-center md:text-left flex-1">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                       <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent">
-                        Why Cursor?
+                        Why Vibe Code?
                       </span>
                     </h2>
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-                      The <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">revolutionary AI-powered editor</span> that's changing how developers work.
-                      <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-semibold"> Cursor</span> isn't just another editor—it's your 
-                      intelligent coding partner that understands your project, anticipates your needs, and writes code alongside you.
+                      The <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">revolutionary AI-powered approach</span> that's changing how developers work.
+                      <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-semibold"> Vibe code</span> isn't just another coding method—it's your 
+                      intelligent partnership that understands your vision, anticipates your needs, and creates code through conversation, not memorization.
                     </p>
 
                     {/* Feature highlights */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                          AI Pair Programming
+                          AI Conversation Partner
                         </div>
                         <div className="text-sm text-gray-400">Like having a senior developer beside you—AI that reads your entire codebase and suggests solutions that actually fit</div>
                       </div>
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-                          Predictive Completions
+                          Intent-Based Coding
                         </div>
-                        <div className="text-sm text-gray-400">AI that finishes your thoughts—completions so accurate they feel like mind-reading, not guesswork</div>
+                        <div className="text-sm text-gray-400">AI that understands your intent—describe what you want and watch it create the exact code you need</div>
                       </div>
                       <div className="text-center md:text-left p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                         <div className="text-base font-semibold bg-gradient-to-r from-emerald-400 to-amber-400 bg-clip-text text-transparent mb-2">
-                          Code with Words
+                          Code Through Conversation
                         </div>
-                        <div className="text-sm text-gray-400">Describe what you want in plain English and watch AI write the exact code you need—no more syntax hunting</div>
+                        <div className="text-sm text-gray-400">Describe your vision in plain English and watch AI write the exact code you need—no more syntax hunting</div>
                       </div>
                     </div>
                   </div>
@@ -185,7 +185,7 @@ export default function HomePage() {
                 <span className="gradient-text-blue">What you get</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Three concrete deliverables in every 60-minute session
+                Three concrete deliverables to master vibe code in every 60-minute session
               </p>
             </div>
             
@@ -195,10 +195,10 @@ export default function HomePage() {
                   <FiClock className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Fast clarity on your blockers
+                  Fast clarity on your vibe code blockers
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  We'll zero in on what's really holding you back and align on a clear outcome for the hour.
+                  We'll zero in on what's really holding you back from effective AI collaboration and align on a clear outcome for the hour.
                 </p>
               </div>
               
@@ -207,10 +207,10 @@ export default function HomePage() {
                   <FiVideo className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Hands-on progress in real time
+                  Hands-on vibe code progress in real time
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Code together toward a concrete win — scaffolds, fixes, deploys, or optimized loops.
+                  Code together using AI conversation — scaffolds, fixes, deploys, or optimized workflows through natural language.
                 </p>
               </div>
               
@@ -219,10 +219,10 @@ export default function HomePage() {
                   <FiFileText className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Action notes you can run with
+                  Vibe code action notes you can run with
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  A short recap doc with changes made, key snippets, and your next 3 steps.
+                  A short recap doc with AI prompts that worked, key conversation patterns, and your next 3 steps to master vibe code.
                 </p>
               </div>
             </div>
@@ -246,19 +246,19 @@ export default function HomePage() {
                 <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Have a Cursor blocker or workflow question you need solved fast
+                    Have a vibe code blocker or AI workflow question you need solved fast
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Want to optimize your AI-assisted development loop
+                    Want to optimize your AI conversation and development loop
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Need guidance on project scaffolding or deployment issues
+                    Need guidance on project scaffolding or deployment through AI conversation
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    Are looking for ongoing coaching or mentorship to level up your skills
+                    Are looking for ongoing coaching to master vibe code and level up your AI collaboration skills
                   </li>
                 </ul>
               </div>
@@ -306,8 +306,8 @@ export default function HomePage() {
                   What will we cover?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  We'll focus on your specific objective: creating a project scaffold, removing a blocker, 
-                  unblocking deployment, or optimizing your AI development workflow. One clear outcome per session.
+                  We'll focus on your specific objective: creating a project scaffold through AI conversation, removing a vibe code blocker, 
+                  unblocking deployment using AI collaboration, or optimizing your AI development workflow. One clear outcome per session.
                 </p>
               </div>
               
@@ -336,8 +336,8 @@ export default function HomePage() {
                   Will you write code?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  This is hands-on coaching. I'll guide you through writing code, share proven snippets, 
-                  and work alongside you to solve your specific challenge.
+                  This is hands-on vibe code coaching. I'll guide you through AI collaboration, share proven conversation patterns, 
+                  and work alongside you to solve your specific challenge through natural language.
                 </p>
               </div>
               
@@ -386,7 +386,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                      60-minute focused session
+                      60-minute focused vibe code session
                     </p>
                   </div>
                   
@@ -425,7 +425,7 @@ export default function HomePage() {
             <div>
               <Logo className="mb-4" />
               <p className="text-gray-400 mb-4">
-                60-minute focused Cursor coaching sessions. Practical shortcuts. Clear next steps.
+                60-minute focused vibe code coaching sessions. Master AI collaboration. Clear next steps.
               </p>
             </div>
             <div>

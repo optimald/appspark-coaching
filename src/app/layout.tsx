@@ -6,8 +6,8 @@ import PageTracker from '@/components/PageTracker';
 import ScrollTracker from '@/components/ScrollTracker';
 
 export const metadata: Metadata = {
-  title: 'AppSpark — 60-Minute Custom Cursor Session',
-  description: 'Make Cursor work for you in 60 minutes. One focused session. Practical shortcuts. A clear next step.',
+  title: 'AppSpark — Master Vibe Code with Cursor in 60 Minutes',
+  description: 'Master vibe code with Cursor in 60 minutes. Learn to code with words, not syntax. One focused session. A clear next step.',
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
